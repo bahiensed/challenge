@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.montserrat-400 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.montserrat-700 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+header {
+  background-color: #1e40af;
+  color: white;
+  padding: 8px 16px;
+  text-align: left;
+  width: full;
+  height: 32px;
+}
+
+.logo {
+  padding: 9px 0 0 7px;  
+}
+
+#container {
+  padding: 32px 16px;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  width: full;
+}
+
+#company,
+#filter {
+  display: flex;
+  flex-direction: row;
+}
+
+#company button,
+#filter button,
+#search-button {
+  background-color: #2563eb;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-weight: 700;
+  margin-right: 8px;
+  padding: 8px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 120px;
+  height: 40px;
+}
+
+#company button:hover,
+#filter button:hover,
+#search-button:hover {
+  background-color: #60a5fa;
+}
+
+main {
+  display: flex;
+  width: full;
+}
+
+#tree {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+#search {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+#search-form {
+  display: flex;
+  width: 100%;
+}
+
+#search-input {
+  border: 1px solid #e5e7eb;
+  flex-grow: 1;
+  font-size: medium;
+  margin-right: 8px;
+}
+
+#error-message {
+  color: red;
+  display: none;
+  padding: 8px 4px;
+}
+
+#tree-container {
+  padding: 8px;
+  width: full;
+}
+
+#tree-container a {
+  display: block;
+  padding: 6px 0px;
+  cursor: pointer;
+}
+
+#tree-container a:hover {
+  background-color: #93c5fd;
+}
+
+#display {
+  align-self: flex-start;
+  border: 1px solid #e5e7eb;
+  margin-left: 12px;
+  padding: 8px 14px;
+  width: 55%;
+}
+
+/* Item types icons */
+.location-item {
+  list-style-image: url('../imgs/location.png');
+}
+
+.asset-item {
+  list-style-image: url('../imgs/asset.png');
+}
+
+.component-item {
+  list-style-image: url('../imgs/component.png');
+}
+
+.selected-item {
+  background-color: #93c5fd;
+}
