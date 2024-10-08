@@ -30,6 +30,14 @@ const createCompaniesTree = async () => {
     // Add click event
     button.addEventListener('click', (event) => {
       event.preventDefault();
+
+      // Remove class active
+      const allButtons = document.querySelectorAll('.company-button');
+      allButtons.forEach(btn => btn.classList.remove('active'));
+
+      // Add class active
+      button.classList.add('active');
+
       createTree(company.id); // Call function to create company tree
 
       // Show filters

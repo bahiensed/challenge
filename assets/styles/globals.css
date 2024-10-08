@@ -74,6 +74,10 @@ header {
   background-color: #60a5fa;
 }
 
+#company button.active {
+  background-color: #22c55e;
+}
+
 main {
   display: flex;
   width: full;
